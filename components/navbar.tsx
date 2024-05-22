@@ -5,17 +5,23 @@ import { Dongle } from "next/font/google";
 const roboto_slab = Dongle({ subsets: ["latin"], weight: "300" });
 
 import Link from "next/link";
+import { BiSolidCameraMovie } from "react-icons/bi";
 
 const Navbar = () => {
   return (
     <div className="backdrop-blur-sm">
       <div className="flex items-center justify-between py-8 px-10 ">
-        <h2
-          className={`${roboto_slab.className} text-7xl tracking-widest text-white`}
-        >
-          {" "}
-          <Link href="/">Cinévo</Link>
-        </h2>
+        {" "}
+        <Link href="/">
+          <div className="flex gap-4 items-center justify-center">
+            <BiSolidCameraMovie className="mb-3" size={50} />
+            <div
+              className={`${roboto_slab.className} text-7xl tracking-widest text-black`}
+            >
+              Cinévo
+            </div>
+          </div>
+        </Link>
         <div className="flex justify-between text-sm font-extralight gap-10">
           <motion.div
             className="relative"

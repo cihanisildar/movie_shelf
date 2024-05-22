@@ -10,11 +10,11 @@ const Movies = async () => {
     return null;
   }
   return (
-    <div className=" bg-gradient-to-tr from-gray-400 to-slate-600 flex flex-col gap-10">
+    <div className=" bg-gradient-to-br from-slate-200 to-stone-400 flex flex-col gap-10">
       <Navbar />
       <div className="w-full  px-10">
-        <div className="border-b-2 border-black">
-          <h2>Movies</h2>
+        <div className="border-b-2 border-slate-700">
+          <h2 className=" text-2xl">Movies</h2>
         </div>
       </div>
 
