@@ -47,8 +47,14 @@ export const getListById = cache(async (listId: number) => {
 
 export const getListItemById = cache(async (listId: number) => {
   const data = await db.query.listItems.findFirst({
-    where: eq(listItems.id, listId),
+    where: eq(listItems.listId, listId),
   });
+  return data;
+});
 
+export const getListItemsById = cache(async (listId: number) => {
+  const data = await db.query.listItems.findMany({
+    where: eq(listItems.listId, listId),
+  });
   return data;
 });

@@ -11,7 +11,7 @@ const Entrance = () => {
   
   return (
     <div className={styles.entrance}>
-      <Navbar />
+      <Navbar background="backdrop-blur-sm" classname="text-white" color1="#ffffff" color2="#000000"/>
       <div
         className={`${roboto_slab.className} absolute bottom-60 right-32 text-2xl  text-white w-[400px] `}
       >
@@ -28,7 +28,7 @@ const Entrance = () => {
         </motion.p>
       </div>
       <div>
-        <Button>To bottom</Button>
+        {/* <Button>To bottom</Button> */}
       </div>
     </div>
   );

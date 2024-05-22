@@ -21,9 +21,14 @@ const MovieIdPage = async ({ params }: Props) => {
   }
 
   return (
-    <div className="bg-gradient-to-tr from-gray-50 to-gray-500 h-screen w-screen">
-      <Navbar />
-      <div className="mt-10 flex items-center justify-center gap-20">
+    <div className=" h-screen w-screen">
+      <Navbar
+        background="bg-[#171717]"
+        classname="text-[#ffffff]          "
+        color1="#ffffff"
+        color2="#000000"
+       />
+      <div className="mt-10 text-white flex items-center justify-center gap-20">
         <div>
           <Image
             className="rounded-lg"

@@ -10,11 +10,21 @@ const Shows = async () => {
     return null;
   }
   return (
-    <div className="bg-gradient-to-br from-slate-200 to-stone-400 flex flex-col gap-10">
-      <Navbar />
+    <div className="flex flex-col gap-10">
+      <Navbar
+        background="bg-[#000]"
+        classname="text-white"
+        color1="#ffffff"
+        color2="#000000"
+      />
       <div className="w-full  px-10">
-        <div className="border-b-2 border-black">
-          <h2 className="text-2xl ">Shows</h2>
+        <div className="flex flex-col gap-4 text-white">
+          <h2 className="text-6xl font-extrabold">TV Shows</h2>
+          <p className="max-w-xl tracking-wide">
+            In today's era, the small screen boasts an impressive array of
+            content. From sitcoms and dramas to travel and talk shows, it's a
+            treasure trove of entertainment. Here are the finest programs on TV.
+          </p>
         </div>
       </div>
 
