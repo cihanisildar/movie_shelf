@@ -46,19 +46,19 @@ export const getFirstPoster = async (listId: number) => {
   return null;
 };
 
-export const getListItem = async (listId: number) => {
-  try {
-    const listItem = await getListItemById(listId);
-    if (listItem?.itemType === "movie" && listItem.movieId) {
-      const movie = await getMovieById(listItem.movieId);
-      return movie;
-    } else if (listItem?.itemType === "show" && listItem.showId) {
-      const show = await getShowById(listItem.showId);
-      return show;
-    }
-    return null;
-  } catch (error) {
-    console.error(`Error: ${error}`);
-    return null;
-  }
-};
+// export const getListItem = async (listId: number) => {
+//   try {
+//     const listItem = await getListItemById(listId);
+//     if (listItem?.itemType === "movie" && listItem.movieId) {
+//       const movie = await getMovieById(listItem.movieId);
+//       return movie;
+//     } else if (listItem?.itemType === "show" && listItem.showId) {
+//       const show = await getShowById(listItem.showId);
+//       return show;
+//     }
+//     return null;
+//   } catch (error) {
+//     console.error(`Error: ${error}`);
+//     return null;
+//   }
+// };

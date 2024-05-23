@@ -22,16 +22,19 @@ const ListIdPage = async ({ params }: Props) => {
   }
 
   return (
-    <div className=" h-screen w-screen">
+    <div className="">
       <Navbar
         background="bg-[#171717]"
         classname="text-[#ffffff]          "
         color1="#ffffff"
         color2="#000000"
       />
-      {listData.map((listItem) => (
-        <List key={listItem.id} listItem={listItem} />
+      <div className="p-10 grid grid-cols-5 gap-10">
+        {listData.map((listItem) => (
+          <List key={listItem.id} listItem={listItem} />
       ))}
+      </div>
+      
     </div>
   );
 };
