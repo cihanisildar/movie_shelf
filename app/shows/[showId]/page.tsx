@@ -21,7 +21,7 @@ const ShowIdPage = async ({ params }: Props) => {
   }
 
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen text-white">
       <Navbar
         background="bg-[#171717]"
         classname="text-[#ffffff]          "

@@ -17,7 +17,7 @@ const Lists = async () => {
         color1="#ffffff"
         color2="#000000"
       />
-      <div className="w-full  px-10">
+      <div className="w-full  px-10 py-5">
         <div className="flex flex-col gap-4 text-white">
           <h2 className="text-6xl font-extrabold">Lists</h2>
           <p className="max-w-3xl tracking-wide">

@@ -10,14 +10,14 @@ const Movies = async () => {
     return null;
   }
   return (
-    <div className=" flex flex-col gap-10">
+    <div className=" flex flex-col gap-10 ">
       <Navbar
         background="bg-[#171717]"
         classname="text-[#ffffff]          "
         color1="#ffffff"
         color2="#000000"
       />
-      <div className="w-full  px-10">
+      <div className="w-full  px-10  py-5">
         <div className="flex flex-col gap-4 text-white">
           <h2 className=" text-6xl font-extrabold">Movies</h2>
           <p className="max-w-xl tracking-wide">
